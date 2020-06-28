@@ -42,7 +42,7 @@ function displayResults(weather) {
 		weather.main.temp_max
 	)}°c`;
 }
-
+//Builds date
 function dateBuilder(d) {
 	let months = [
 		"January",
