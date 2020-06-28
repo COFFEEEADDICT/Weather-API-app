@@ -22,7 +22,7 @@ function setQuery(evt) {
 	}
 }
 
-//fills the info out
+//Fills the info out
 function displayResults(weather) {
 	let city = document.querySelector(".location .city");
 	city.innerText = `${weather.name}, ${weather.sys.country}`;
@@ -41,6 +41,13 @@ function displayResults(weather) {
 	hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(
 		weather.main.temp_max
 	)}°c`;
+
+	//Changes class name if weather is above 18 or below
+	if (Math.round(weather.main.temp_min) < 18) {
+		document.body.setAttribute("class", "body-bg-cold");
+	} else {
+		return document.body.setAttribute("class", "body-bg-warm");
+	}
 }
 //Builds date
 function dateBuilder(d) {

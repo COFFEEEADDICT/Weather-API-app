@@ -6,10 +6,24 @@
 
 body {
 	font-family: "montserrat", sans-serif;
-	background-image: url("warm.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+
+.body-bg-warm {
+	font-family: "montserrat", sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-image: url("https://i.ibb.co/d0rZx8Q/warm.jpg");
+}
+.body-bg-cold {
+	font-family: "montserrat", sans-serif;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-image: url("https://i.ibb.co/SyDcvZd/cold.jpg");
 }
 
 .app-wrap {
